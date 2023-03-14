@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AppTests.LoginPageTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-03-14T06:21:08" hostname="INHYLHARSHITAR" time="7.88">
+  <properties/>
+  <testcase name="TestCases" classname="AppTests.LoginPageTest" time="7.88">
+    <failure message="org.openqa.selenium.WebDriverException: The following error occurred: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:41060&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'INHYLHARSHITAR', ip: '10.9.7.58', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'&#10;Driver info: driver.version: RemoteWebDriver&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'INHYLHARSHITAR', ip: '10.9.7.58', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: The following error occurred: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:41060
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'INHYLHARSHITAR', ip: '10.9.7.58', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: driver.version: RemoteWebDriver
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'INHYLHARSHITAR', ip: '10.9.7.58', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: driver.version: unknown
+	at app//Steps.LoginPageSteps.isOnLoginPage(LoginPageSteps.java:14)
+	at app//AppTests.LoginPageTest.TestCases(LoginPageTest.java:22)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 41060
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 14, 2023 11:51:11 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1678774875.530][WARNING]: Processing messages while being disconnected
+]]></system-err>
+</testsuite>

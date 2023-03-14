@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-03-09T11:46:00 IST" name="Default suite" finished-at="2023-03-09T12:03:15 IST" duration-ms="1034666">
+    <groups>
+    </groups>
+    <test started-at="2023-03-09T11:46:00 IST" name="Default test" finished-at="2023-03-09T12:03:15 IST" duration-ms="1034666">
+      <class name="com.mytests.MendixTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mytests.MendixTest@36916eb0]" started-at="2023-03-09T11:46:00 IST" name="setUp" finished-at="2023-03-09T11:46:01 IST" duration-ms="582" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="launchingMendixStudioPro()[pri:1, instance:com.mytests.MendixTest@36916eb0]" started-at="2023-03-09T11:46:01 IST" name="launchingMendixStudioPro" finished-at="2023-03-09T11:46:14 IST" duration-ms="12969" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchingMendixStudioPro -->
+        <test-method signature="creatingApp()[pri:2, instance:com.mytests.MendixTest@36916eb0]" started-at="2023-03-09T11:46:14 IST" name="creatingApp" finished-at="2023-03-09T11:46:22 IST" duration-ms="8392" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- creatingApp -->
+        <test-method signature="importingModule()[pri:3, instance:com.mytests.MendixTest@36916eb0]" started-at="2023-03-09T11:46:22 IST" name="importingModule" finished-at="2023-03-09T11:46:22 IST" duration-ms="85" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- importingModule -->
+        <test-method signature="clickingOnImportButton()[pri:4, instance:com.mytests.MendixTest@36916eb0]" started-at="2023-03-09T11:46:22 IST" name="clickingOnImportButton" finished-at="2023-03-09T11:52:04 IST" duration-ms="342243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickingOnImportButton -->
+        <test-method signature="changingTheSetting()[pri:5, instance:com.mytests.MendixTest@36916eb0]" started-at="2023-03-09T11:52:04 IST" name="changingTheSetting" finished-at="2023-03-09T11:52:59 IST" duration-ms="54119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changingTheSetting -->
+        <test-method signature="configureAppModules()[pri:6, instance:com.mytests.MendixTest@36916eb0]" started-at="2023-03-09T11:52:59 IST" name="configureAppModules" finished-at="2023-03-09T11:55:12 IST" duration-ms="133723" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureAppModules -->
+        <test-method signature="selecting()[pri:7, instance:com.mytests.MendixTest@36916eb0]" started-at="2023-03-09T11:55:12 IST" name="selecting" finished-at="2023-03-09T11:58:07 IST" duration-ms="174945" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selecting -->
+        <test-method signature="commitTheChanges()[pri:8, instance:com.mytests.MendixTest@36916eb0]" started-at="2023-03-09T11:58:07 IST" name="commitTheChanges" finished-at="2023-03-09T11:58:30 IST" duration-ms="22290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- commitTheChanges -->
+        <test-method signature="publishTheApp()[pri:9, instance:com.mytests.MendixTest@36916eb0]" started-at="2023-03-09T11:58:30 IST" name="publishTheApp" finished-at="2023-03-09T12:03:15 IST" duration-ms="285255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- publishTheApp -->
+        <test-method is-config="true" signature="stop()[pri:0, instance:com.mytests.MendixTest@36916eb0]" started-at="2023-03-09T12:03:15 IST" name="stop" finished-at="2023-03-09T12:03:15 IST" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stop -->
+      </class> <!-- com.mytests.MendixTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
