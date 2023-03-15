@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -22,6 +23,9 @@ import io.appium.java_client.windows.WindowsDriver;
 import io.appium.java_client.windows.WindowsElement;
 import com.mytests.WinDiver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+
 
 
 
@@ -35,8 +39,8 @@ public class MendixTest {
 	Integer value =  10+random.nextInt(90);
 	
 
-	@BeforeTest
-public  void setUp() throws IOException {
+@BeforeTest
+public  void setUp() throws IOException, InterruptedException {
 	DesiredCapabilities cap = new DesiredCapabilities();
 	cap.setCapability("app", "Root");
 	cap.setCapability("platformName", "Windows");
@@ -47,6 +51,7 @@ public  void setUp() throws IOException {
 	} catch (MalformedURLException e) {
 	e.printStackTrace();
 	}
+	Thread.sleep(10000);	 
 driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 			
 }
@@ -60,8 +65,6 @@ public void launchingMendixStudioPro() throws InterruptedException {
 	Thread.sleep(2000);	 		 
 	}
 	
-	
-
 @Test(priority=2)
 public void creatingApp() throws InterruptedException {
 	driver.findElementByName("Blank Web App").click();
@@ -74,6 +77,9 @@ public void creatingApp() throws InterruptedException {
 
 @Test(priority=3)
 public void importingModule() throws InterruptedException{
+//	WebDriverWait wait = new WebDriverWait(driver, 240000);
+//	wait.until(ExpectedConditions.titleContains("variable+value.toString()+(Main line) - 9.12.10"));
+	Thread.sleep(240000);
 	String newWindowTitle = "variable+value.toString()+(Main line) - 9.12.10";
 	   
     for (String handle : driver.getWindowHandles()) {
@@ -386,12 +392,12 @@ public void  commitTheChanges() throws InterruptedException{
 	message.click();
 	message.sendKeys("commit is done");
 	driver.findElementByName("OK").click();
-	Thread.sleep(3000);
+	Thread.sleep(60000);
 	
 }
 @Test(priority=9)
 public void  publishTheApp() throws InterruptedException{
-	Thread.sleep(60000);
+	Thread.sleep(120000);
 	driver.findElementByName("_Run").click();
 	driver.findElementByName("Run Locally").click();
 	Thread.sleep(30000);
@@ -401,9 +407,17 @@ public void  publishTheApp() throws InterruptedException{
 	Thread.sleep(30000);
 }
 
+
 @AfterTest
 public void stop()
   {
+//	WinDiver.cmd();
+//	WebElement cmd = driver.findElementByName("Text Area");
+//	cmd.sendKeys("cd C:\\Users\\harshitar\\IdeaProjects\\OIDCProviderBDDSerenity");
+//	cmd.sendKeys(Keys.RETURN);
+//	cmd.sendKeys("gradle test");
+//	cmd.sendKeys(Keys.RETURN);
+	
 	if(driver!=null) 
 	{
 	driver.quit();

@@ -6,9 +6,12 @@
       <class name="com.mytests.MendixTest">
         <methods>
           <include name="commitTheChanges"/>
+          <include name="changingTheSetting"/>
           <include name="selecting"/>
+          <include name="clickingOnImportButton"/>
           <include name="configureAppModules"/>
           <include name="stop"/>
+          <include name="importingModule"/>
           <include name="publishTheApp"/>
           <include name="setUp"/>
         </methods>
